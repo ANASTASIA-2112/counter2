@@ -6,14 +6,11 @@ export  type Display2PropsType = {
     startValue: number
     maxValue: number
     set: () => void
-    incorrectValue:boolean
-    count:number
-    handleStartValueChange:(event: ChangeEvent<HTMLInputElement>)=>void
-    handleMaxValueChange:(event: ChangeEvent<HTMLInputElement>)=>void
-    disabled:boolean
-
-
-
+    incorrectValue: boolean
+    count: number
+    handleStartValueChange: (event: ChangeEvent<HTMLInputElement>) => void
+    handleMaxValueChange: (event: ChangeEvent<HTMLInputElement>) => void
+    disabled: boolean
 
 
 }
@@ -22,7 +19,6 @@ export  type Display2PropsType = {
 const Display2 = (props: Display2PropsType) => {
     return (
         <div className={"display"}>
-
 
 
             Max value:{" "}
@@ -41,7 +37,7 @@ const Display2 = (props: Display2PropsType) => {
                     className={"start"}
                     type="number"
                     value={props.startValue}
-                    style={{borderColor: props.incorrectValue ? "red" : "inherit"} }
+                    style={{borderColor: props.incorrectValue ? "red" : "inherit"}}
                     onChange={props.handleStartValueChange}
 
 

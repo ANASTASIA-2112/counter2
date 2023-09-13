@@ -13,7 +13,7 @@ disabled:boolean
 
 
 }
-export function SupperButton (props:ButtonPropsType) {
+export function Button (props:ButtonPropsType) {
 
 
     return (
@@ -41,4 +41,4 @@ export function SupperButton (props:ButtonPropsType) {
 
     );
 };
-export default SupperButton;
+export default Button;

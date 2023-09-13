@@ -1,41 +1,32 @@
 import React from 'react';
-import {SupperButton} from "./SupperButton";
+import {Button} from "./SupperButton";
 
 
+export type PropsType = {
+    count: number
+    inc: () => void
+    reset: () => void
 
-
-
-
-export type PropsType ={
-    count:number
-    inc:()=>void
-    reset :()=>void
-
-    set: ()=>void
-    maxValue:number
-    startValue:number
-    disabled:boolean
-
+    set: () => void
+    maxValue: number
+    startValue: number
+    disabled: boolean
 
 
 }
 
 
-
-const Counter = (props:PropsType) => {
+const Counter = (props: PropsType) => {
 
     return (
         <div className={"Counter"}>
-            <SupperButton
+            <Button
                 reset={props.reset}
                 inc={props.inc}
                 count={props.count}
                 set={props.set}
-                disabled={props.count===5}
-maxValue={props.maxValue}
-
-
-
+                disabled={props.count === 5}
+                maxValue={props.maxValue}
 
 
             />
